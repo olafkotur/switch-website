@@ -1,0 +1,63 @@
+/********* General *********/
+body {
+  font-family: 'Courier New', Courier, monospace; 
+  background-color: #303136;
+}
+
+button:focus {
+  outline: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+input:focus {
+  outline:none!important;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/********* Colors *********/
+.bg-primary {
+  background: #303136 !important;
+}
+
+.bg-secondary {
+  background: #1F2225 !important;
+}
+
+.bg-error {
+  background: #B33939 !important;
+}
+
+.bg-red {
+  background:red !important;
+}
+
+.bg-blue {
+  background: blue !important;
+}
+
+.primary {
+  color: #fff !important;
+}
+
+.secondary {
+  color: #B33939 !important;
+}
+
+.tertiary {
+  color: #227093 !important;
+}
+
+.quaternary {
+  color: #CCAE62 !important;
+}
+
+.border-primary {
+  border-color: #fff !important;
+}
