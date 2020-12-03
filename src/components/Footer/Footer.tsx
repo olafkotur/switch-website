@@ -10,10 +10,6 @@ export default class Footer extends React.Component {
         </span>
 
         <span className="mx-4">
-          <a href="https://www.notion.so/olafkotur/Beta-69d5855bbd124df6b9fa0d78c4868cb5" className="text-muted">Beta</a>
-        </span>
-
-        <span className="mx-4">
           <a href="https://www.notion.so/What-s-New-87a42395e92d44f4866d895fcd91d0ac" className="text-muted">Updates</a>
         </span>
       </div>
