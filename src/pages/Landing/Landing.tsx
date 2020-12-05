@@ -1,9 +1,8 @@
 import React from 'react';
 import Title from '../../components/Title/Title';
 import Footer from '../../components/Footer/Footer';
-import preview from '../../assets/preview-1.gif';
-import { Button } from '@material-ui/core';
-import './landing.css';
+import Carousel from '../../components/Carousel/Carousel';
+import { Button  } from '@material-ui/core';
 
 export default class Landing extends React.Component {
   render() {
@@ -27,7 +26,7 @@ export default class Landing extends React.Component {
           </Button>
           <p className="text-center text-muted mt-1 font-italic">currently in beta</p>
 
-          <img alt="Preview use of Switch" src={preview} className="preview" />
+          <Carousel />
         </div>
 
         <div className="w-100 mt-5">
