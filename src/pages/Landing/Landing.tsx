@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../../components/Title/Title';
 import Footer from '../../components/Footer/Footer';
 import preview from '../../assets/preview-1.gif';
-import { Button } from '@material-ui/core';
+import { Button, Zoom } from '@material-ui/core';
 import './landing.css';
 
 export default class Landing extends React.Component {
@@ -27,7 +27,9 @@ export default class Landing extends React.Component {
           </Button>
           <p className="text-center text-muted mt-1 font-italic">currently in beta</p>
 
-          <img alt="Preview use of Switch" src={preview} className="preview" />
+          <Zoom in timeout={{ enter: 1000 }}>
+            <img alt="Preview use of Switch" src={preview} className="preview mt-3" />
+          </Zoom>
         </div>
 
         <div className="w-100 mt-5">
