@@ -3,7 +3,7 @@ import Title from '../../components/Title/Title';
 import Footer from '../../components/Footer/Footer';
 import Carousel from '../../components/Carousel/Carousel';
 import Header from '../../components/Header/Header';
-import { Button  } from '@material-ui/core';
+import Download from '../../components/Download/Download';
 
 export default class Landing extends React.Component {
   render() {
@@ -13,23 +13,22 @@ export default class Landing extends React.Component {
         <div className="mt-5 d-flex flex-column justify-content-center align-items-center">
           <Title />
 
-          {/* download part */}
-          <div className="d-flex flex-column justify-content-center align-items-center">
-            <h3 className="primary text-center mt-5">Simple browser overlay on your device</h3>
-            <h5 className="primary text-center">Stop switching windows</h5>
+          <h3 className="primary text-center mt-5">Simple browser overlay on your device</h3>
+          <div className="d-flex flex-row">
+            <h5 className="primary text-center">Switch to&nbsp;</h5>
+            <h5 className="secondary"> S</h5>
+            <h5 className="primary">w</h5>
+            <h5 className="primary">i</h5>
+            <h5 className="primary">t</h5>
+            <h5 className="tertiary">c</h5>
+            <h5 className="quaternary">h</h5>
+          </div>
 
-            <Button
-              variant="contained"
-              className="mt-3"
-              color="primary"
-              target="_blank"
-              href="https://gumroad.com/l/switchapp"
-            >
-              Download
-            </Button>
-            <p className="text-center text-muted mt-1 font-italic">currently in beta</p>
+          <Carousel />
 
-            <Carousel />
+          <div className="d-flex flex-row mt-5">
+            <Download disabled os="Windows" description="available soon" />
+            <Download os="macOS" description="currently in beta" />
           </div>
 
           <div className="w-100 mt-5">
