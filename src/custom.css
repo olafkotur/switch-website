@@ -2,6 +2,9 @@
 body {
   font-family: 'Courier New', Courier, monospace; 
   background-color: #303136;
+  background: url('./assets/bg.png');
+  background-repeat: repeat;
+  position: relative;
 }
 
 button:focus {

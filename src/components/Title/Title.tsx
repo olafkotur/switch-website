@@ -8,7 +8,7 @@ export default class Title extends React.Component {
     return (
       <Slide in={true} direction="down" timeout={{ enter: 750 }} >
         <div className="d-flex flex-column justify-content-center align-items-center">
-          <img alt="Switch Logo" src={logo} className="logo" />
+          <img alt="Switch Logo" src={logo} className="title-logo" />
           <div className="d-flex flex-row">
             <h1 className="secondary mr-2">s</h1>
             <h1 className="primary mr-2">w</h1>
