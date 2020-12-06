@@ -4,6 +4,7 @@ body {
   background-color: #303136;
   background: url('./assets/bg.png');
   background-repeat: repeat;
+  position: relative;
 }
 
 button:focus {

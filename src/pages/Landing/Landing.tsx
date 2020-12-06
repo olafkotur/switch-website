@@ -10,6 +10,8 @@ import './landing.css';
 
 interface IState {
   activeFeatureId: number;
+  forceExpand: boolean;
+  showFullPage: boolean;
 }
 
 export default class Landing extends React.Component<{}, IState> {
@@ -27,6 +29,8 @@ export default class Landing extends React.Component<{}, IState> {
 
     this.state = {
       activeFeatureId: 0,
+      forceExpand: window.screen.width < 415,
+      showFullPage: window.screen.width >= 530,
     };
 
     this.config = [
@@ -73,6 +77,18 @@ export default class Landing extends React.Component<{}, IState> {
   }
 
   /**
+   * Component mounting
+   */
+  public componentDidMount() {
+    window.addEventListener('resize', () => {
+      this.setState({
+        forceExpand: window.screen.width < 415,
+        showFullPage: window.screen.width >= 530,
+      });
+    });
+  }
+
+  /**
    * Handles feature clicked
    * @param id - feature id
    */
@@ -83,7 +99,7 @@ export default class Landing extends React.Component<{}, IState> {
   render() {
     return (
       <div>
-        <Header />
+        {this.state.showFullPage && <Header />}
         <div className="mt-5 d-flex flex-column justify-content-center align-items-center">
           <Title />
 
@@ -98,23 +114,23 @@ export default class Landing extends React.Component<{}, IState> {
             <h5 className="quaternary">h</h5>
           </div>
 
-          <div className="landing-feature-container">
-            <Carousel />
+          <div className="landing-feature-container mt-3">
+            {this.state.showFullPage && <Carousel />}
 
-            <div className="d-flex flex-row row overflow-auto w-100 mt-4">  
+            <div className={`d-flex flex-row row overflow-auto mt-4 ${this.state.showFullPage ? '' : 'justify-content-center'}`}>  
               {this.config.map((v, i) => (
                 <Feature
                   {...v}
                   id={i}
                   key={`feature-${i}`}
-                  show={this.state.activeFeatureId === i}
+                  show={this.state.forceExpand || this.state.activeFeatureId === i}
                   handleClick={this.handleFeatureClicked}
                 />
               ))}
             </div>
           </div>
 
-          <div className="d-flex flex-row mt-5">
+          <div className="d-flex flex-row row overflow-auto justify-content-center mt-5">
             <Download disabled os="Windows" description="available soon" />
             <Download os="macOS" description="currently in beta" />
           </div>
