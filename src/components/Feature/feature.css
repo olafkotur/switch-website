@@ -1,0 +1,30 @@
+.feature-spacing {
+  margin: 20px 25px 20px 15px !important;
+  /* margin: 30px !important; */
+}
+
+.feature-container {
+  width: 140px;
+  height: 140px;
+}
+
+.feature-container-expanded {
+  border-radius: 4px 0 0 4px !important;
+}
+
+.feature-container-info {
+  width: 180px;
+  height: 140px;
+  border-radius: 0 4px 4px 0 !important;
+}
+
+.feature-icon {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.feature-description {
+  font-size: 12px;
+  text-align: left;
+}
