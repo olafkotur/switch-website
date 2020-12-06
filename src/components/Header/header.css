@@ -1,0 +1,13 @@
+.header-container {
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: url('../../assets/bg.png');
+  background-repeat: repeat;
+}
+
+.header-logo {
+  width: 80px;
+}
