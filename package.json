@@ -1,6 +1,6 @@
 {
   "name": "switch-website",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "author": "Olaf Kotur <olafkotur97@gmail.com>",
   "dependencies": {

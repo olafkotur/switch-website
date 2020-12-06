@@ -103,7 +103,7 @@ export default class Landing extends React.Component<{}, IState> {
         <div className="mt-5 d-flex flex-column justify-content-center align-items-center">
           <Title />
 
-          <h3 className="primary text-center mt-5">Simple browser overlay on your device</h3>
+          <h3 className="primary text-center mt-5">Simple browser overlay on your screen</h3>
           <div className="d-flex flex-row">
             <h5 className="primary text-center">Switch to&nbsp;</h5>
             <h5 className="secondary"> S</h5>
