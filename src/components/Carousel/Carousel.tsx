@@ -1,20 +1,19 @@
 import React from 'react';
-import { Carousel as BootCarousel } from 'react-bootstrap';
-import previewOne from '../../assets/preview-1.gif';
 import './carousel.css';
+
+const DemoVideo = require('../../assets/demo.mp4');
 
 export default class Carousel extends React.Component {
   render() {
     return (
-      <BootCarousel>
-        <BootCarousel.Item>
-          <img
-            alt="Preview use of Switch"
-            src={previewOne}
-            className="preview mt-3"
-          />
-        </BootCarousel.Item>
-      </BootCarousel>
+      <video
+        playsInline
+        autoPlay
+        muted
+        loop
+        src={DemoVideo.default}
+        className="preview mt-3"
+      />
     );
   }
 }

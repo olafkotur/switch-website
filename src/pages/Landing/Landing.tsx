@@ -113,6 +113,7 @@ export default class Landing extends React.Component<{}, IState> {
             <h5 className="tertiary">c</h5>
             <h5 className="quaternary">h</h5>
           </div>
+          <span className="text-muted download-description">currently in beta</span>
 
           <div className="landing-feature-container mt-3">
             {this.state.showFullPage && <Carousel />}
