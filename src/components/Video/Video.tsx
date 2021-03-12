@@ -1,9 +1,9 @@
 import React from 'react';
-import './carousel.css';
+import './video.css';
 
 const DemoVideo = require('../../assets/demo.mp4');
 
-export default class Carousel extends React.Component {
+export default class Video extends React.Component {
   render() {
     return (
       <video
@@ -12,7 +12,7 @@ export default class Carousel extends React.Component {
         muted
         loop
         src={DemoVideo.default}
-        className="preview mt-3"
+        className="preview mt-3 w-100"
       />
     );
   }
