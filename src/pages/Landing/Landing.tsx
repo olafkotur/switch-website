@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../../components/Title/Title';
 import Footer from '../../components/Footer/Footer';
-import Carousel from '../../components/Carousel/Carousel';
+import Video from '../../components/Video/Video';
 import Header from '../../components/Header/Header';
 import Download from '../../components/Download/Download';
 import Feature from '../../components/Feature/Feature';
@@ -69,8 +69,7 @@ export default class Landing extends React.Component<{}, IState> {
         title: 'Jeeeeeez!',
         description: 'Switch will work with most web applications, you can choose from our suggested apps or just add your own.',
       },
-
-    ]
+    ];
 
     // scope binding
     this.handleFeatureClicked = this.handleFeatureClicked.bind(this);
@@ -116,7 +115,7 @@ export default class Landing extends React.Component<{}, IState> {
           <span className="text-muted download-description">currently in beta</span>
 
           <div className="landing-feature-container mt-3">
-            {this.state.showFullPage && <Carousel />}
+            {this.state.showFullPage && <Video />}
 
             <div className={`d-flex flex-row row overflow-auto mt-4 ${this.state.showFullPage ? '' : 'justify-content-center'}`}>  
               {this.config.map((v, i) => (
