@@ -112,7 +112,7 @@ export default class Landing extends React.Component<{}, IState> {
             <h5 className="tertiary">c</h5>
             <h5 className="quaternary">h</h5>
           </div>
-          <span className="text-muted download-description">currently in beta</span>
+          <span className="text-muted download-description">version 1.0.0</span>
 
           <div className="landing-feature-container mt-3">
             {this.state.showFullPage && <Video />}
@@ -132,7 +132,7 @@ export default class Landing extends React.Component<{}, IState> {
 
           <div className="d-flex flex-row row overflow-auto justify-content-center mt-5">
             <Download disabled os="Windows" description="available soon" />
-            <Download os="macOS" description="currently in beta" />
+            <Download os="macOS" description="version 1.0.0" />
           </div>
 
           <div className="w-100 mt-5">
